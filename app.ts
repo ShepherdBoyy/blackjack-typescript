@@ -3,34 +3,11 @@ import { ICard } from "./types";
 import { getBet, getDecision, getHandValue, getStrHand } from "./utils";
 
 function playerTurn(playerHand: ICard[], deck: Deck): number {
-  let handValue = getHandValue(playerHand);
-
-  while (true) {
-    const action = getDecision();
-    if (action !== "hit") return handValue;
-
-    playerHand.push(deck.deal(1)[0]);
-    handValue = getHandValue(playerHand);
-    console.log(`Your hand: ${getStrHand(playerHand)} (Total: ${handValue})`);
-
-    if (handValue > 21) {
-      return handValue;
-    }
-  }
+  // should return the hadn value after the turn is over
 }
 
 function dealerTurn(dealerHand: ICard[], deck: Deck): number {
-  let handValue = getHandValue(dealerHand);
-
-  while (true) {
-    console.log(
-      `Dealer's hand: ${getStrHand(dealerHand)} (Total: ${handValue})`
-    );
-    if (handValue >= 17) return handValue;
-
-    dealerHand.push(deck.deal(1)[0]);
-    handValue = getHandValue(dealerHand);
-  }
+  // should return the hadn value after the turn is over
 }
 
 let dealerHand: ICard[] = [];
