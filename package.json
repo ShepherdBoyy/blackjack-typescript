@@ -1,23 +1,19 @@
 {
   "name": "blackjack",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc && node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ShepherdBoyy/blackjack-typescript.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ShepherdBoyy/blackjack-typescript/issues"
-  },
-  "homepage": "https://github.com/ShepherdBoyy/blackjack-typescript#readme",
-  "description": "",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@types/prompt-sync": "^4.2.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
