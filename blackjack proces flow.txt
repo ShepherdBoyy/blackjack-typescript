@@ -249,3 +249,5 @@ class Card implements ICard{
 }
 
 export default Card
+
+This is the process flow of the blackjack project game in typescript
