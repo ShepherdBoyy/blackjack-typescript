@@ -1,3 +1,8 @@
+This is the process flow of the blackjack project game in typescript
+I want this to better understand the concept of coding in typescript
+i want my code structure to be like a pro or senior developer
+I want this
+
 app.ts
 
 let dealerHand: ICard[] = [];
@@ -249,5 +254,3 @@ class Card implements ICard{
 }
 
 export default Card
-
-This is the process flow of the blackjack project game in typescript
